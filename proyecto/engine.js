@@ -3,6 +3,11 @@ const Engine = (() => {
   const create = (cols, rows) =>
     Array.from({ length: rows }, () => Array(cols).fill(0));
 
+  const toggle = (grid, x, y) =>
+    grid.map((row, ry) =>
+      row.map((cell, rx) => (rx === x && ry === y ? cell ^ 1 : cell))
+    );
+
   const randomize = (grid, p = 0.28) =>
     grid.map(row => row.map(() => +(Math.random() < p)));
 
@@ -12,6 +17,6 @@ const Engine = (() => {
   const population = (grid) =>
     grid.reduce((s, row) => s + row.reduce((r, c) => r + c, 0), 0);
 
-  return { create, randomize, clear, population };
+  return { create, toggle, randomize, clear, population };
 
 })();
