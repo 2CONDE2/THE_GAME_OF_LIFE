@@ -1,3 +1,4 @@
+
 const Engine = (() => {
 
   const create = (cols, rows) =>
@@ -14,9 +15,12 @@ const Engine = (() => {
     return n;
   };
 
-  const toggle = (grid, x, y) =>
-    grid.map((row, ry) =>
-      row.map((cell, rx) => (rx === x && ry === y ? cell ^ 1 : cell))
+  const step = (grid) =>
+    grid.map((row, y) =>
+      row.map((cell, x) => {
+        const n = _neighbors(grid, x, y);
+        return cell ? +(n === 2 || n === 3) : +(n === 3);
+      })
     );
 
   const randomize = (grid, p = 0.28) =>
@@ -25,9 +29,14 @@ const Engine = (() => {
   const clear = (grid) =>
     grid.map(row => row.map(() => 0));
 
+  const toggle = (grid, x, y) =>
+    grid.map((row, ry) =>
+      row.map((cell, rx) => (rx === x && ry === y ? cell ^ 1 : cell))
+    );
+
   const population = (grid) =>
     grid.reduce((s, row) => s + row.reduce((r, c) => r + c, 0), 0);
 
-  return { create, toggle, randomize, clear, population };
+  return { create, step, randomize, clear, toggle, population };
 
 })();
