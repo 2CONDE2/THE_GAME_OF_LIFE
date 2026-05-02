@@ -110,3 +110,11 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]::-webkit-slider-thumb:hover { background: var(--accent-h); }
+
+/* ── Mute button ── */
+#btn-mute { margin-left: 4px; font-size: 15px; }
+#btn-mute.muted {
+  color: #f87171;
+  border-color: #7f1d1d;
+  background: rgba(248,113,113,.08);
+}
