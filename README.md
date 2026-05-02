@@ -152,6 +152,19 @@ No se requiere instalar nada. El proyecto corre directamente en el navegador.
 
 ---
 
+## 📚 Recursos y Enlaces
+<p align="center">
+	<a href="https://youtu.be/RRg38oNQ9vk?si=rqNaVh4s2a_WJ-hr" style="text-decoration:none;">
+		<span style="display:inline-block;position:relative;line-height:0;">
+			<img src="https://img.youtube.com/vi/RRg38oNQ9vk/maxresdefault.jpg" srcset="https://img.youtube.com/vi/RRg38oNQ9vk/maxresdefault.jpg 1280w, https://img.youtube.com/vi/RRg38oNQ9vk/hqdefault.jpg 480w" sizes="(max-width:600px) 100vw, 480px" alt="Conway's Game of Life — Explicación detallada" style="display:block;border-radius:8px;width:480px;max-width:100%;height:auto;box-shadow:0 6px 18px rgba(0,0,0,0.12);" />
+			<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:72px;height:72px;opacity:0.9;">
+				<circle cx="50" cy="50" r="48" fill="rgba(0,0,0,0.6)" />
+				<polygon points="40,30 70,50 40,70" fill="#ffffff" />
+			</svg>
+		</span>
+	</a>
+</p>
+
 <div align="center">
 
 *"De reglas simples nace la complejidad del universo."*
