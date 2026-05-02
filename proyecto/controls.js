@@ -3,6 +3,12 @@ const Controls = (() => {
     document.getElementById('btn-play').textContent = playing ? '⏸' : '▶';
   };
 
-  return { setPlaying };
+  const updateStats = (gen, pop) => {
+    document.getElementById('gen').textContent = gen;
+    document.getElementById('pop').textContent = pop;
+  };
+
+  return { setPlaying, updateStats };
 })();
+
 
