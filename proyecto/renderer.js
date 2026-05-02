@@ -4,7 +4,7 @@ const Renderer = (() => {
   const C_ALIVE = '#dde8ff';
   const C_DEAD  = '#111118';
 
-  let canvas, ctx;
+  let canvas, ctx, cols, rows; // Añadimos cols y rows
 
   const init = (el) => {
     canvas = el;
@@ -15,6 +15,8 @@ const Renderer = (() => {
   const resize = () => {
     canvas.width  = canvas.offsetWidth;
     canvas.height = canvas.offsetHeight;
+    cols = Math.floor(canvas.width  / CELL); // Calculamos cols
+    rows = Math.floor(canvas.height / CELL); // Calculamos rows
   };
 
   const draw = (grid) => {
@@ -30,5 +32,7 @@ const Renderer = (() => {
     }
   };
 
-  return { init, draw }; // Añadimos draw a los métodos públicos
+  const getDimensions = () => ({ cols, rows }); // Nueva función
+
+  return { init, resize, draw, getDimensions }; // Exponemos las nuevas funciones
 })();
