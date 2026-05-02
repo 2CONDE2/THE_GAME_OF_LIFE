@@ -67,3 +67,38 @@ const App = (() => {
     if (wasAlive) Sound.cellDied(); else Sound.cellBorn();
     _render();
   };
+  
+  /* ── Init ── */
+
+  const init = () => {
+    Renderer.init(document.getElementById('canvas'));
+    playing = false;
+    speed   = 10;
+    gen     = 0;
+
+    randomize();
+
+    Controls.bind({
+      onPlay:   togglePlay,
+      onStep:   step,
+      onRandom: randomize,
+      onClear:  clear,
+      onToggle: handleToggle,
+      onSpeed:  (v) => { speed = v; },
+      onMute:   () => {
+        const m = Sound.toggleMute();
+        Controls.setMuted(m);
+      },
+    });
+
+    window.addEventListener('resize', () => {
+      Renderer.resize();
+      randomize();
+    });
+  };
+
+  return { init };
+
+})();
+
+document.addEventListener('DOMContentLoaded', App.init);
