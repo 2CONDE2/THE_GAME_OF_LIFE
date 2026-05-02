@@ -1,3 +1,15 @@
+## GRUPO INFPOSTSCESI
+
+  ### INTEGRANTES 
+   
+   - Edgar Zapata Cruz
+   - Alexander Lara Ureña
+   - Gabriel Bazualdo Rojas 
+   - Jheron Dylan Conde Martinez
+
+
+![Logo Equipo](imagenes/bd941e8e-36ff-488f-b508-12d260d1769c.png)
+
 <div align="center">
 
 # 🧬 Conway's Game of Life
