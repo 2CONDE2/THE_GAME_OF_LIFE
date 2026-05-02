@@ -24,9 +24,9 @@ const Renderer = (() => {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.fillStyle = C_ALIVE;
-    const maxY = Math.min(rows, grid.length); // Límite para Y
+    const maxY = Math.min(rows, grid.length);
     for (let y = 0; y < maxY; y++) {
-      const maxX = Math.min(cols, grid[y].length); // Límite para X
+      const maxX = Math.min(cols, grid[y].length);
       for (let x = 0; x < maxX; x++) {
         if (grid[y][x])
           ctx.fillRect(x * CELL + GAP, y * CELL + GAP, CELL - GAP, CELL - GAP);
@@ -34,7 +34,15 @@ const Renderer = (() => {
     }
   };
 
+  const cellAt = (clientX, clientY) => {
+    const r = canvas.getBoundingClientRect();
+    return {
+      x: Math.floor((clientX - r.left)  / CELL),
+      y: Math.floor((clientY - r.top) / CELL),
+    };
+  };
+
   const getDimensions = () => ({ cols, rows });
 
-  return { init, resize, draw, getDimensions };
+  return { init, resize, draw, cellAt, getDimensions };
 })();
