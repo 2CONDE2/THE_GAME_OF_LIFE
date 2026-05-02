@@ -1,4 +1,12 @@
 const Controls = (() => {
+  const bind = ({ onPlay, onStep, onRandom, onClear, onSpeed }) => {
+    document.getElementById('btn-play').addEventListener('click', onPlay);
+    document.getElementById('btn-step').addEventListener('click', onStep);
+    document.getElementById('btn-random').addEventListener('click', onRandom);
+    document.getElementById('btn-clear').addEventListener('click', onClear);
+    document.getElementById('speed').addEventListener('input', e => onSpeed(+e.target.value));
+  };
+
   const setPlaying = (playing) => {
     document.getElementById('btn-play').textContent = playing ? '⏸' : '▶';
   };
@@ -8,7 +16,7 @@ const Controls = (() => {
     document.getElementById('pop').textContent = pop;
   };
 
-  return { setPlaying, updateStats };
+  return { bind, setPlaying, updateStats };
 })();
 
 
