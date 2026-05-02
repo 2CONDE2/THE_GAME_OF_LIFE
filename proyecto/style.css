@@ -79,3 +79,34 @@ main { flex: 1; overflow: hidden; }
   min-width: 44px;
 }
 .btn.accent:hover { background: var(--accent-h); border-color: var(--accent-h); }
+
+/* ── Speed Slider ── */
+.speed-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  color: var(--muted);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  transition: background .15s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover { background: var(--accent-h); }
