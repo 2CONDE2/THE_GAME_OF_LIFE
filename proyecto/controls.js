@@ -9,17 +9,21 @@ const Controls = (() => {
     document.getElementById('speed').addEventListener('input', e => onSpeed(+e.target.value));
 
     const canvas = document.getElementById('canvas');
+
     canvas.addEventListener('mousedown', e => {
       _drawing = true;
       onToggle(e);
     });
+
     canvas.addEventListener('mousemove', e => {
       if (_drawing) onToggle(e);
     });
-    // La corrección:
-    canvas.addEventListener('mouseup', () => {
-      _drawing = false;
-    });
+
+    ['mouseup', 'mouseleave'].forEach(ev =>
+      canvas.addEventListener(ev, () => {
+        _drawing = false;
+      })
+    );
   };
 
   const setPlaying = (playing) => {
