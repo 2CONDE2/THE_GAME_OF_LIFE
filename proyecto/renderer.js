@@ -4,7 +4,7 @@ const Renderer = (() => {
   const C_ALIVE = '#dde8ff';
   const C_DEAD  = '#111118';
 
-  let canvas, ctx, cols, rows; // Añadimos cols y rows
+  let canvas, ctx, cols, rows;
 
   const init = (el) => {
     canvas = el;
@@ -15,8 +15,8 @@ const Renderer = (() => {
   const resize = () => {
     canvas.width  = canvas.offsetWidth;
     canvas.height = canvas.offsetHeight;
-    cols = Math.floor(canvas.width  / CELL); // Calculamos cols
-    rows = Math.floor(canvas.height / CELL); // Calculamos rows
+    cols = Math.floor(canvas.width  / CELL);
+    rows = Math.floor(canvas.height / CELL);
   };
 
   const draw = (grid) => {
@@ -24,15 +24,17 @@ const Renderer = (() => {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.fillStyle = C_ALIVE;
-    for (let y = 0; y < grid.length; y++) {
-      for (let x = 0; x < grid[y].length; x++) {
+    const maxY = Math.min(rows, grid.length); // Límite para Y
+    for (let y = 0; y < maxY; y++) {
+      const maxX = Math.min(cols, grid[y].length); // Límite para X
+      for (let x = 0; x < maxX; x++) {
         if (grid[y][x])
           ctx.fillRect(x * CELL + GAP, y * CELL + GAP, CELL - GAP, CELL - GAP);
       }
     }
   };
 
-  const getDimensions = () => ({ cols, rows }); // Nueva función
+  const getDimensions = () => ({ cols, rows });
 
-  return { init, resize, draw, getDimensions }; // Exponemos las nuevas funciones
+  return { init, resize, draw, getDimensions };
 })();
