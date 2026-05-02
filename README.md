@@ -126,11 +126,14 @@ A lo largo de los años, la comunidad matemática ha catalogado miles de patrone
 ## 📂 Estructura del Proyecto
 
 ```
-THE GAME OF LIFE/
+proyecto/
 │
 ├── index.html      →  Punto de entrada y estructura del lienzo
-├── style.css       →  Diseño visual del tablero y controles
-├── script.js       →  Motor del juego: reglas, vecinos y renderizado
+├── style.css       →  Estilos visuales y diseño del tablero
+├── app.js          →  Inicialización y punto central del script
+├── engine.js       →  Lógica del Juego de la Vida (reglas y actualización)
+├── renderer.js     →  Renderizado en `<canvas>` y utilidades gráficas
+├── controls.js     →  Manejo de controles de UI (play, pause, velocidad)
 └── README.md       →  Documentación del proyecto
 ```
 
