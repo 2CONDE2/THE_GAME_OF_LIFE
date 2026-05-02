@@ -16,6 +16,10 @@ const Controls = (() => {
     canvas.addEventListener('mousemove', e => {
       if (_drawing) onToggle(e);
     });
+    // La corrección:
+    canvas.addEventListener('mouseup', () => {
+      _drawing = false;
+    });
   };
 
   const setPlaying = (playing) => {
