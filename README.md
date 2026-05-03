@@ -1,3 +1,9 @@
+## GRUPO INFPOSTSCESI
+
+
+
+![Logo Equipo](imagenes/bd941e8e-36ff-488f-b508-12d260d1769c.png)
+
 <div align="center">
 
 # 🧬 Conway's Game of Life
@@ -37,10 +43,10 @@
 
 | N° | Nombre | Rol |
 |:--:|--------|-----|
-| 1 | *(Integrante 1)* | Desarrollador/a |
-| 2 | *(Integrante 2)* | Desarrollador/a |
-| 3 | *(Integrante 3)* | Desarrollador/a |
-| 4 | *(Integrante 4)* | Desarrollador/a |
+| 1 | *Edgar Zapata Cruz* | Desarrollador/a |
+| 2 | *Alexander Lara Ureña* | Desarrollador/a |
+| 3 | *Gabriel Bazualdo Rojas* | Desarrollador/a |
+| 4 | *Jheron Dylan Conde Martinez* | Desarrollador/a |
 
 ---
 
