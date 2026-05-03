@@ -1,7 +1,6 @@
-## GRUPO INFPOSTSCESI
+## EQUIPO: 
 
-<div align="center">
-	<img src="imagenes/bd941e8e-36ff-488f-b508-12d260d1769c.png" alt="InfPostSCESI logo" style="width:120px;height:120px;object-fit:contain;border-radius:10px;margin-bottom:12px;box-shadow:0 6px 18px rgba(0,0,0,0.08);" />
+![Logo Equipo](imagenes/bd941e8e-36ff-488f-b508-12d260d1769c.png)
 
 # 🧬 Conway's Game of Life
 
