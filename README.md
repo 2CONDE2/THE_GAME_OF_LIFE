@@ -40,24 +40,39 @@
 
 
 
-<p align="center">
-	<span style="display:inline-block;text-align:center;margin:12px;">
-		<img src="imagenes/Edgar.jpeg" alt="Edgar Zapata Cruz" style="width:120px;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.12);" />
-		<br/><strong>Edgar Zapata Cruz</strong><br/>Desarrollador/a
-	</span>
-	<span style="display:inline-block;text-align:center;margin:12px;">
-		<img src="imagenes/Alexander.jpeg" alt="Alexander Lara Ureña" style="width:120px;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.12);" />
-		<br/><strong>Alexander Lara Ureña</strong><br/>Desarrollador/a
-	</span>
-	<span style="display:inline-block;text-align:center;margin:12px;">
-		<img src="imagenes/Gabriel.jpeg" alt="Gabriel Bazualdo Rojas" style="width:120px;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.12);" />
-		<br/><strong>Gabriel Bazualdo Rojas</strong><br/>Desarrollador/a
-	</span>
-	<span style="display:inline-block;text-align:center;margin:12px;">
-		<img src="imagenes/Jheron.jpeg" alt="Jheron Dylan Conde Martinez" style="width:120px;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.12);" />
-		<br/><strong>Jheron Dylan Conde Martinez</strong><br/>Desarrollador/a
-	</span>
-</p>
+<!-- Team gallery as a styled table for consistent layout and aesthetic cards -->
+<table align="center" cellpadding="14" cellspacing="0" style="border-collapse:separate;border-spacing:24px 18px;">
+	<tr>
+		<td align="center" width="180" style="vertical-align:top;">
+			<div style="width:120px;margin:0 auto;border-radius:12px;overflow:hidden;">
+				<img src="imagenes/Edgar.jpeg" alt="Edgar Zapata Cruz" width="120" height="120" style="display:block;" />
+			</div>
+			<div style="margin-top:10px;font-weight:600;">Edgar Zapata Cruz</div>
+			<div style="font-size:12px;color:#6b7280;">Desarrollador</div>
+		</td>
+		<td align="center" width="180" style="vertical-align:top;">
+			<div style="width:120px;margin:0 auto;border-radius:12px;overflow:hidden;">
+				<img src="imagenes/Alexander.jpeg" alt="Alexander Lara Ureña" width="120" height="120" style="display:block;" />
+			</div>
+			<div style="margin-top:10px;font-weight:600;">Alexander Lara Ureña</div>
+			<div style="font-size:12px;color:#6b7280;">Desarrollador</div>
+		</td>
+		<td align="center" width="180" style="vertical-align:top;">
+			<div style="width:120px;margin:0 auto;border-radius:12px;overflow:hidden;">
+				<img src="imagenes/Gabriel.jpeg" alt="Gabriel Bazualdo Rojas" width="120" height="120" style="display:block;" />
+			</div>
+			<div style="margin-top:10px;font-weight:600;">Gabriel Bazualdo Rojas</div>
+			<div style="font-size:12px;color:#6b7280;">Desarrollador</div>
+		</td>
+		<td align="center" width="180" style="vertical-align:top;">
+			<div style="width:120px;margin:0 auto;border-radius:12px;overflow:hidden;">
+				<img src="imagenes/Jheron.jpeg" alt="Jheron Dylan Conde Martinez" width="120" height="120" style="display:block;" />
+			</div>
+			<div style="margin-top:10px;font-weight:600;">Jheron Dylan Conde M.</div>
+			<div style="font-size:12px;color:#6b7280;">Desarrollador</div>
+		</td>
+	</tr>
+</table>
 
 
 
