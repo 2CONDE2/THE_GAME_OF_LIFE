@@ -1,10 +1,7 @@
 ## GRUPO INFPOSTSCESI
 
-
-
-![Logo Equipo](imagenes/bd941e8e-36ff-488f-b508-12d260d1769c.png)
-
 <div align="center">
+	<img src="imagenes/bd941e8e-36ff-488f-b508-12d260d1769c.png" alt="InfPostSCESI logo" style="width:120px;height:120px;object-fit:contain;border-radius:10px;margin-bottom:12px;box-shadow:0 6px 18px rgba(0,0,0,0.08);" />
 
 # 🧬 Conway's Game of Life
 
@@ -39,14 +36,30 @@
 
 ## 👥 Equipo
 
-> **InfPostSCESI** — Proyecto de mini-implementación como ejercicio práctico de programación web.
+> **InfPostSCESI** 
 
-| N° | Nombre | Rol |
-|:--:|--------|-----|
-| 1 | *Edgar Zapata Cruz* | Desarrollador/a |
-| 2 | *Alexander Lara Ureña* | Desarrollador/a |
-| 3 | *Gabriel Bazualdo Rojas* | Desarrollador/a |
-| 4 | *Jheron Dylan Conde Martinez* | Desarrollador/a |
+
+
+<p align="center">
+	<span style="display:inline-block;text-align:center;margin:12px;">
+		<img src="imagenes/Edgar.jpeg" alt="Edgar Zapata Cruz" style="width:120px;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.12);" />
+		<br/><strong>Edgar Zapata Cruz</strong><br/>Desarrollador/a
+	</span>
+	<span style="display:inline-block;text-align:center;margin:12px;">
+		<img src="imagenes/Alexander.jpeg" alt="Alexander Lara Ureña" style="width:120px;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.12);" />
+		<br/><strong>Alexander Lara Ureña</strong><br/>Desarrollador/a
+	</span>
+	<span style="display:inline-block;text-align:center;margin:12px;">
+		<img src="imagenes/Gabriel.jpeg" alt="Gabriel Bazualdo Rojas" style="width:120px;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.12);" />
+		<br/><strong>Gabriel Bazualdo Rojas</strong><br/>Desarrollador/a
+	</span>
+	<span style="display:inline-block;text-align:center;margin:12px;">
+		<img src="imagenes/Jheron.jpeg" alt="Jheron Dylan Conde Martinez" style="width:120px;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.12);" />
+		<br/><strong>Jheron Dylan Conde Martinez</strong><br/>Desarrollador/a
+	</span>
+</p>
+
+
 
 ---
 
